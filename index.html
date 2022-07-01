@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Temperature Converter</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="borderBox">
+			<h1 class="container title">Convert Units</h1>
+			<section class="container">
+
+				<button id="conversionType" class="conversionButton icon">Temperature</button>
+			</section>
+			<section class="container inputContainer">
+	
+				<section class="inputs">
+					<form action="">
+						<input id="inputOne" class="data" type="text" placeholder="" autocomplete="off">
+					</form>
+					<button id="buttonOne" class="inputButton icon">Celsius</button>
+					<section id="dropdownOne" class="dropdownContent">
+						<ul>
+							<li class="unitList">
+								<button id="buttonOne_a" class="unitButton">Celsius</button>
+							</li>
+							<li>
+								<button id="buttonOne_b" class="unitButton">Fahrenheit</button>
+							</li>
+							<li>
+								<button id="buttonOne_c" class="unitButton">Kelvin</button>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<i class="fa-solid fa-equals"></i>
+				<section class="inputs">
+					<form action="">
+						<input id="inputTwo" class="data" type="text" placeholder="" autocomplete="off">
+					</form>
+					<button id="buttonTwo" class="inputButton icon">Fahrenheit</button>
+					<section id="dropdownTwo" class="dropdownContent">
+						<ul>
+							<li class="unitList">
+								<button id="buttonTwo_a" class="unitButton">Celsius</button>
+							</li>
+							<li>
+								<button id="buttonTwo_b" class="unitButton">Fahrenheit</button>
+							</li>
+							<li>
+								<button id="buttonTwo_c" class="unitButton">Kelvin</button>
+							</li>
+						</ul>
+					</section>
+				</section>
+			</section>
+			<section class="container formulaContainer">
+				<h2 class="formulaTitle">Formula</h2>
+				<p id="formula" class="formulaText">(<span id="inputOneValue"></span>°C × 9/5) + 32 = <span id="inputTwoValue"></span>°F</p>
+			</section>
+			</div>
+		<script src="https://kit.fontawesome.com/595dbfcc18.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
